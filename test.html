@@ -20,7 +20,7 @@ body {
 }
 
 .container {
-    max-width: 1500px;
+    max-width: 1000px;
     margin: 0 auto;
 
 }
@@ -86,33 +86,23 @@ nav ul li a:hover {
 /* FIRST SECTION */
 
 .main-section {
-  background: url('bg-img.jpg') no-repeat center center; 
+/* full screen background image "fire in background" */
+  background: url('bg-img.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 80vh;
+  /* height of this section 100% of the viewport height */
+  height: 100vh;
+  /* borders */
   border-bottom: 1px solid rgb(15, 13, 13);
   border-top: 1px solid rgb(15, 13, 13);
-}
-
-.container {
+  /* align item "container" to center of page */
   display: grid;
   place-items: center;
   text-align: center;
 }
 
-.section-background {
-  width: 75vw;
-  margin: 12vh 0;
-}
-
-@media screen and (max-width: 800px) {
-  .section-background {
-    width: 90vw;
-    margin: 15vh 0;
-  }
-}
 
 /* .main-section {
     background: url('main-section-logo.jpg') no-repeat center bottom;
@@ -147,10 +137,13 @@ nav ul li a:hover {
             </nav>
             </div>
         </header>
-  
+        <!-- full screen section display grid for alignment -->
         <section class="main-section">
+                <!-- contains bg-logo and buttons container -->
                 <div class="container">
-                    <img class="section-background" src="https://drive.google.com/file/d/1IGAcBEqlGNnphsU-JUUX3Rs77DkEeaNY/view?usp=sharing" alt="">
+                    <!-- "background image" logo only -->
+                    <img class="background-logo" src="bg-logo.png" alt="">
+                    <!-- buttons -->
                     <div class="buttons">
                         <a href="#" class="btn-red">BUY NOW</a>
                         <a href="#" class="btn-white">WATCH TRAILER</a>
