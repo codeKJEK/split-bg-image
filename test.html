@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* GENERAL */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* HEADER AND NAV */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(7, 7, 7);
+    opacity: 80%;
+    padding-left: 15em;
+    padding-right: 12em;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+header:hover,
+header:focus {
+    opacity: 100%;
+    transform:scale(1.05);;
+    transition: 1s ease;
+}
+
+header:not(:hover) {
+    opacity: 80%;
+    transform:scale(1);
+    transition: 1s ease;
+    
+}
+
+
+nav ul li{
+    display: inline-block;
+}
+
+.nav-item-first {
+    color: #da2424;
+    text-decoration: underline;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Londrina Solid', sans-serif;
+    font-size: 1.7em;
+    margin: 1em;
+}
+
+nav ul li a:hover {
+    color: #da2424;
+    text-decoration: underline;
+}
+
+/* FIRST SECTION */
+
+.main-section {
+  background: url('bg-img.jpg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 80vh;
+  border-bottom: 1px solid rgb(15, 13, 13);
+  border-top: 1px solid rgb(15, 13, 13);
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.section-background {
+  width: 75vw;
+  margin: 12vh 0;
+}
+
+@media screen and (max-width: 800px) {
+  .section-background {
+    width: 90vw;
+    margin: 15vh 0;
+  }
+}
+
+/* .main-section {
+    background: url('main-section-logo.jpg') no-repeat center bottom;
+    background-size: 100vw;
+    height: 80vh;
+    border-bottom: 1px solid rgb(15, 13, 13);
+    border-top: 1px solid rgb(15, 13, 13);
+} */
+
+.main-section .button-container {
+    height: 90%;
+    display:  flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+    
+}
+    </style>
+  </head>
+  <body>
+    <body>
+      <main>
+        <header>
+            <img src="IMG/straight-back-games-logo.png" class="logo" alt="logo of straight back games studio" width=110px>
+            <nav class="navbar">
+                <ul>
+                    <li><a class="nav-item-first" href="#">HOME</a></li>
+                    <li><a class="nav-item" href="#">CONTACT</a></li>
+                    <li><a class="nav-item"  href="#">PRESS</a></li>
+                    <li><a class="nav-item"  href="https://store.steampowered.com/app/1274570/DEVOUR/" target='_blank'>BUY DEVOUR!</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+  
+        <section class="main-section">
+                <div class="container">
+                    <img class="section-background" src="https://drive.google.com/file/d/1IGAcBEqlGNnphsU-JUUX3Rs77DkEeaNY/view?usp=sharing" alt="">
+                    <div class="buttons">
+                        <a href="#" class="btn-red">BUY NOW</a>
+                        <a href="#" class="btn-white">WATCH TRAILER</a>
+                    </div>
+                </div>
+        </section>
+
+  </body>
+</html>
